@@ -1,10 +1,11 @@
+
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="BIG5">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>LeeLab Web</title>
+  <title>北護修Time</title>
   <link href="//fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap" rel="stylesheet">
   <!-- Template CSS -->
@@ -20,7 +21,14 @@
     <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
       <div class="container">
         <a class="navbar-brand" href="index.jsp">
-          <span class="fa fa-globe">LeeLab</span><br></a>
+           <div class="container nav-container">
+            <div class="logo-group">
+                <a href="#" class="logo">
+                    <i class="fas fa-wrench"></i>
+                    北護修Time
+                </a>
+                <span class="logo-subtext">RTime</span>
+            </div>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
           <span class="fa icon-expand fa-bars"></span>
@@ -32,10 +40,10 @@
               <a class="nav-link" href="index.jsp">首頁</a>
             </li>
             <li class="nav-item @@about__active">
-              <a class="nav-link" href="memberList.jsp">團隊成員<br></a>
+              <a class="nav-link" href="memberList.jsp">維修申請單<br></a>
             </li>
             <li class="nav-item @@contact__active">
-              <a class="nav-link" href="instruct.jsp">論文與專題指導</a>
+              <a class="nav-link" href="instruct.jsp">修繕追蹤平台</a>
             </li>
             <li class="nav-item @@contact__active" >
               <a class="nav-link" href="member.jsp?memberId=<%=session.getAttribute("accessId")%>">
