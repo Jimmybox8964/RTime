@@ -92,11 +92,22 @@ if (accessId == null) {
 </head>
 
 <body>
+
 <div class="container">
     <h2>校園修繕報修單</h2>
 
     <form action="submitRepair.jsp" method="post" enctype="multipart/form-data">
 
+        <!-- 修繕類別 -->
+        <div class="form-group">
+            <label for="repairType">修繕類別</label>
+            <select id="repairType" name="repairType" required>
+                <option value="">請選擇修繕類別</option>
+                <option>城區部水電+木工</option>
+                <option>校本部電工</option>
+                <option>校本部木工</option>
+            </select>
+        </div>
         <!-- 修繕位置 -->
         <div class="form-group">
             <label for="location">修繕位置</label>
@@ -129,21 +140,12 @@ if (accessId == null) {
             </select>
         </div>
 
-        <!-- 修繕類別 -->
-        <div class="form-group">
-            <label for="repairType">修繕類別</label>
-            <select id="repairType" name="repairType" required>
-                <option value="">請選擇修繕類別</option>
-                <option>城區部水電+木工</option>
-                <option>校本部電工</option>
-                <option>校本部木工</option>
-            </select>
-        </div>
+
 
         <!-- 單位代碼 -->
         <div class="form-group">
-            <label for="unitCode">單位代碼</label>
-            <input type="text" id="unitCode" name="unitCode" required>
+            <label for="unitCode">室別代碼</label>
+            <input type="text" id="unitCode" name="unitCode" placeholder="例:S104、F608"required>
         </div>
 
         <!-- 聯絡電話 -->
