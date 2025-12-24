@@ -8,7 +8,7 @@ if(request.getParameter("memberId") !=null &&
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 	Statement smt= con.createStatement();
-	String getMemberData = "SELECT * FROM leelab WHERE memberId='"+
+	String getMemberData = "SELECT * FROM member WHERE memberId='"+
 			request.getParameter("memberId")+"' AND memberPwd='" +
 			request.getParameter("memberPwd")+"'";
 	ResultSet members = smt.executeQuery(getMemberData);

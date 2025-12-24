@@ -5,12 +5,11 @@ public class DBConfig {
 	}
 	
 	public String FilePath(){
-	   //li's 
-		//String DBPath="D:\\1NAS\\CoreTech\\Java\\course\\Access\\LeeLab.accdb";
-	   //Yujia's  
+	   //Jimmy's 
+		//"C:\\Users\\n2301\\OneDrive\\ドキュメント\\GitHub\\RTime\\src\\main\\webapp\\LeeLab.accdb";
 		 //String DBPath="D:\\leelabnas\\Java\\course\\leelab\\WebContent\\LeeLab.accdb";
 	   //li's
-		 String DBPath="C:\\Users\\User\\Desktop\\leelab\\leelab\\leelab\\src\\main\\webapp\\LeeLab.accdb";
+		 String DBPath="C:\\Users\\n2301\\OneDrive\\ドキュメント\\GitHub\\RTime\\src\\main\\webapp\\LeeLab.accdb";
 	   return DBPath;		
 	}
 }
